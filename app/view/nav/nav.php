@@ -53,7 +53,7 @@
                     </a>
                   </li>
 
-                  <li class="nav-item list-group-item border-0 p-0"></li>
+                  <!-- <li class="nav-item list-group-item border-0 p-0"></li>
                     <a class="dropdown-item py-2 ps-3 border-radius-md" href="#" data-bs-toggle="modal" data-bs-target="#modalTema">
                       <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
                         Agregar Un Tema Nuevo
@@ -90,7 +90,7 @@
                         Relacionar Contenidos</h6>
                       <span class="text-sm">puedes consultar los temas que tenemos disponibles sobre el comercio internacional</span>
                     </a>
-                  </li>
+                  </li> -->
 
                 </ul>
               </div>

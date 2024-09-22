@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['query'])) {
             while ($row = $result->fetch_assoc()) {
                 // Reemplazar puntos con un contenedor que tenga un margen
                 $descripcion = nl2br(str_replace('.', '.<div style="margin-bottom: 0.1px;"></div>', $row['descripcion']));
-                echo "<li><strong>" . $row['resultado'] . "</strong> <br>" . $descripcion . "</li>";
+                echo "<li><h3>" . $row['resultado'] . "</h3> <br>" . $descripcion . "</li>";
             }
             echo "</ul>";
         } else {
