@@ -84,7 +84,7 @@
                     // Cambiar a botón que llama a la función de búsqueda
                     // echo "<li style='text-align: left;'><button class='btn btn-link' style='text-decoration: none; color: inherit; text-align: left' onclick=\"obtenerContenidoPorId('" . $row['id'] . "')\">" . $row['titulo'] . "</button></li>";
                     // Añadir un nuevo botón para obtener información completa del tema
-                    echo "<li style='text-align: left;'><button class='btn btn-link' style='text-decoration: none; color: inherit; text-align: left' onclick=\"obtenerInformacionTema('" . $row['id'] . "')\">" . $row['titulo'] . " </button></li>";
+                    echo "<li style='text-align: left;'><button class='btn btn-link' style='text-decoration: none; color: inherit; text-align: left' onclick=\"obtenerInformacionTema('" . $row['id'] . "'); listarSubtemas('" . $row['id'] . "')\">" . $row['titulo'] . " </button></li>";
                   }
                 } else {
                   echo "<li>No hay temas disponibles.</li>";
@@ -95,10 +95,10 @@
           </div>
         </div>
         <script>
-          function obtenerContenidoPorId(idTema) {
+          function listarSubtemas(idTema) {
             $.ajax({
               type: 'GET',
-              url: 'controller/obtenerContenido.php', // Corregido: eliminando el '../'
+              url: '/app/controller/obtenerSubtemas.php', // Corregido: eliminando el '../'
               data: {
                 id: idTema
               },
